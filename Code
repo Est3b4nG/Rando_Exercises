@@ -1,0 +1,49 @@
+#Ejercicio1
+"""
+Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, 
+e imprima por pantalla la frase Tu índice de masa corporal es <imc> donde <imc> es el índice de masa corporal calculado redondeado con dos decimales.
+"""
+peso = input("¿Cuál es tu peso en kg? ")
+estatura = input("¿Cuál es tu estatura en metros?")
+imc = round(float(peso)/float(estatura)**2,2)
+print("Tu índice de masa corporal es " + str(imc))
+
+
+#Ejercicio2
+"""
+Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
+"""
+
+numero=int(input("Introduzca un número: "))
+if numero % 2==0:
+  print("Este número es par")
+else:
+  print("Este número es impar")
+  
+
+#Ejercicio3
+"""
+Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos ingresos iguales o superiores
+a 1000 € mensuales. Escribir un programa que pregunte al usuario su edad y sus ingresos mensuales 
+y muestre por pantalla si el usuario tiene que tributar o no.
+"""
+edad=int(input("Inserte su edad: "))
+if edad<17:
+  print("No tienes que tributar")
+else:
+  dinero=int(input("Inserte cuanto dinero gana: "))
+  if dinero>1000:
+    print("Debes tributar")
+  if dinero<1000:
+    print("No tienes que tributar")
+    
+#Ejercicio4
+"""
+Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora. 
+Después debe mostrar por pantalla la paga que le corresponde.
+"""
+
+horas=int(input("Introduzca el número de horas de trabajo "))
+coste=float(input("Ahora introduzca cuanto le pagan la hora "))
+"Tu paga son " f"{horas*coste:.3f} " "pesos colombianos"
+#print("tu paga son",x, "Dólares")
